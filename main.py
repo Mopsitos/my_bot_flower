@@ -6,7 +6,7 @@ import config
 import buttons
 import keyboards
 from custom_filters import button_filter
-from my_favorite_bot.buttons import baza_button
+from buttons import baza_button
 
 # Инициализируем нашего бота директора школы
 bot = Client(
