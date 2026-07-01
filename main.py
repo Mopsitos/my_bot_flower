@@ -8,20 +8,12 @@ import keyboards
 from custom_filters import button_filter
 from my_favorite_bot.buttons import baza_button
 
-# Настройки прокси для подключения к Telegram
-proxy_settings = {
-    "hostname": "127.0.0.1",
-    "port": 12334,
-    "scheme": "http"
-}
-
 # Инициализируем нашего бота директора школы
 bot = Client(
     api_id=config.API_ID,
     api_hash=config.API_HASH,
     bot_token=config.BOT_TOKEN,
-    name="HotDog_Bot",
-    proxy=proxy_settings
+    name="HotDog_Bot"
 )
 DB_NAME = 'dog.db'
 user_states = {}
